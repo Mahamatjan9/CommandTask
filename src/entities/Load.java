@@ -4,11 +4,21 @@ public class Load {
     private double height;
     private double width;
     private double weight;
+    private int length;
 
-    public Load(int height, int width, int weight) {
+    public int getLength() {
+        return length;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public Load(int height, int width, int weight, int length) {
         this.height = height;
         this.width = width;
         this.weight = weight;
+        this.length = length;
     }
 
     public double getHeight() {
