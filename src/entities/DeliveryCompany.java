@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class DeliveryCompany {
     private String deliveryCompanyName;
     private final int pricePerKilogram =200;
-    private ArrayList<Customer> customers;
+    private ArrayList<Customer> customers = new ArrayList<>();
     private final int maxCapacityPerSquareCentimeter =100;
 
     public DeliveryCompany(String deliveryCompanyName) {

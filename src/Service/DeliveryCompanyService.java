@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DeliveryCompanyService {
-    private ArrayList<DeliveryCompany> deliveryCompanies;
+    private ArrayList<DeliveryCompany> deliveryCompanies = new ArrayList<>();
 
     public void acceptOrder(Customer customer) {
         /* remove in main branch
@@ -25,14 +25,15 @@ public class DeliveryCompanyService {
         Customer customer = new Customer(customerName, new Order(0, new Load(height, width, weight, length)));
 */
         Scanner s = new Scanner(System.in);
-        if (deliveryCompanies.isEmpty()) {
+        if (deliveryCompanies==null||deliveryCompanies.isEmpty()) {
             System.out.println("No companies created.");
         } else {
             System.out.println("Choose delivery company:");
             for (int i = 0; i < deliveryCompanies.size(); i++) {
                 System.out.printf("%d: %s, price: %d", i + 1, deliveryCompanies.get(i).getDeliveryCompanyName(), deliveryCompanies.get(i).getPricePerKilogram());
+                System.out.println();
             }
-            int target = s.nextInt();
+            int target = s.nextInt() -  1;
             if (target < 0 || target >= deliveryCompanies.size())
                 System.out.println("Invalid target");
             else {
