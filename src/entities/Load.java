@@ -1,11 +1,11 @@
 package entities;
 
-public class Laad {
+public class Load {
     private int height;
     private int width;
-    private  int weight;
+    private int weight;
 
-    public Laad(int height, int width, int weight) {
+    public Load(int height, int width, int weight) {
         this.height = height;
         this.width = width;
         this.weight = weight;

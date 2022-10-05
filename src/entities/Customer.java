@@ -2,12 +2,12 @@ package entities;
 
 public class Customer {
     private String customerName;
-    private int older;
+    private int order;
 
 
-    public Customer(String customerName, int older) {
+    public Customer(String customerName, int order) {
         this.customerName = customerName;
-        this.older = older;
+        this.order = order;
     }
 
     public String getCustomerName() {
@@ -18,19 +18,19 @@ public class Customer {
         this.customerName = customerName;
     }
 
-    public int getOlder() {
-        return older;
+    public int getOrder() {
+        return order;
     }
 
-    public void setOlder(int older) {
-        this.older = older;
+    public void setOrder(int order) {
+        this.order = order;
     }
 
     @Override
     public String toString() {
         return "Customer{" +
                 "customerName='" + customerName + '\'' +
-                ", older=" + older +
+                ", order=" + order +
                 '}';
     }
 }
