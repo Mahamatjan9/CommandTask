@@ -37,9 +37,12 @@ public class DeliveryCompanyService {
             if (target < 0 || target >= deliveryCompanies.size())
                 System.out.println("Invalid target");
             else {
-                if ((customer.getOrder().getLoad().getHeight() *
+                if ((2*(customer.getOrder().getLoad().getLength() *
+                        customer.getOrder().getLoad().getWidth() +
                         customer.getOrder().getLoad().getWidth() *
-                        customer.getOrder().getLoad().getLength()) >
+                        customer.getOrder().getLoad().getHeight() +
+                        customer.getOrder().getLoad().getLength() *
+                                customer.getOrder().getLoad().getHeight())) >
                         deliveryCompanies.get(target).getMaxCapacityPerSquareCentimeter()) {
                     System.out.println("Max order capacity for this company is reached.");
                 } else {
