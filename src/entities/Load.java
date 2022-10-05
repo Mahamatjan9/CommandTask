@@ -1,9 +1,9 @@
 package entities;
 
 public class Load {
-    private int height;
-    private int width;
-    private int weight;
+    private double height;
+    private double width;
+    private double weight;
 
     public Load(int height, int width, int weight) {
         this.height = height;
@@ -11,7 +11,7 @@ public class Load {
         this.weight = weight;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
@@ -19,7 +19,7 @@ public class Load {
         this.height = height;
     }
 
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
 
@@ -27,7 +27,7 @@ public class Load {
         this.width = width;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 

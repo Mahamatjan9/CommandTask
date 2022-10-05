@@ -3,7 +3,7 @@ package entities;
 public class DeliveryCompany {
     private String deliveryCompanyName;
     private final int pricePerKilogram =200;
-    private int customers;
+    private int  customers;
     private final int maxCapacityPerSquareCentimeter =100;
 
     public DeliveryCompany(String deliveryCompanyName, int customers) {
@@ -38,7 +38,7 @@ public class DeliveryCompany {
                 "deliveryCompanyName='" + deliveryCompanyName + '\'' +
                 ", pricePerKilogram=" + pricePerKilogram +
                 ", customers=" + customers +
-                ", maxCapacityPerSquareCentimeter=" + maxCapacityPerSquareCentimeter +
+                ", maxCapacityPerSquareSantimeter=" + maxCapacityPerSquareCentimeter +
                 '}';
     }
 }
