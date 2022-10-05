@@ -2,10 +2,10 @@ package entities;
 
 public class Customer {
     private String customerName;
-    private int order;
+    private Order order;
 
 
-    public Customer(String customerName, int order) {
+    public Customer(String customerName, Order order) {
         this.customerName = customerName;
         this.order = order;
     }
@@ -18,11 +18,11 @@ public class Customer {
         this.customerName = customerName;
     }
 
-    public int getOrder() {
+    public Order getOrder() {
         return order;
     }
 
-    public void setOrder(int order) {
+    public void setOrder(Order order) {
         this.order = order;
     }
 

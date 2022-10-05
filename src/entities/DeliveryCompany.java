@@ -1,14 +1,16 @@
 package entities;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class DeliveryCompany {
     private String deliveryCompanyName;
     private final int pricePerKilogram =200;
-    private int customers;
+    private ArrayList<Customer> customers;
     private final int maxCapacityPerSquareCentimeter =100;
 
-    public DeliveryCompany(String deliveryCompanyName, int customers) {
+    public DeliveryCompany(String deliveryCompanyName) {
         this.deliveryCompanyName = deliveryCompanyName;
-        this.customers = customers;
     }
 
     public String getDeliveryCompanyName() {
@@ -20,12 +22,15 @@ public class DeliveryCompany {
         return pricePerKilogram;
     }
 
-    public int getCustomers() {
+    public ArrayList<Customer> getCustomers() {
         return customers;
     }
 
-    public void setCustomers(int customers) {
+    public void setCustomers(ArrayList<Customer> customers) {
         this.customers = customers;
+    }
+    public void addCustomer(Customer customer) {
+        customers.add(customer);
     }
 
     public int getMaxCapacityPerSquareCentimeter() {
@@ -37,7 +42,7 @@ public class DeliveryCompany {
         return "DeliveryCompany{" +
                 "deliveryCompanyName='" + deliveryCompanyName + '\'' +
                 ", pricePerKilogram=" + pricePerKilogram +
-                ", customers=" + customers +
+                ", customers=" + customers.toString() +
                 ", maxCapacityPerSquareCentimeter=" + maxCapacityPerSquareCentimeter +
                 '}';
     }

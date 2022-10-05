@@ -2,10 +2,10 @@ package entities;
 
 public class Order {
     private  int orderFee;
-    private int load;
+    private Load load;
 
 
-    public Order(int orderFee, int load) {
+    public Order(int orderFee, Load load) {
         this.orderFee = orderFee;
         this.load = load;
     }
@@ -18,11 +18,11 @@ public class Order {
         this.orderFee = orderFee;
     }
 
-    public int getLoad() {
+    public Load getLoad() {
         return load;
     }
 
-    public void setLoad(int load) {
+    public void setLoad(Load load) {
         this.load = load;
     }
 
